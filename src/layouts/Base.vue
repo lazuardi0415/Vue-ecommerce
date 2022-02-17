@@ -5,21 +5,21 @@
         <router-link class="navbar-brand" to="/">CS-eCommerce</router-link>
         <div class="ml-auto">
           <div v-if="user.photoURL">
-            <img
-              :src="user.photoURL"
-              class="img-thumbnail profile-image"
-              alt
-            />
+            <img :src="user.photoURL" class="img-thumbnail profile-image" alt />
             <router-link class="btn btn-primary my-2 my-sm-0" to="/cart">
               <img
                 src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG38.png"
                 width="50"
                 alt
               />
-              <span class="badge badge-danger badge-pill">{{ cart.length }}</span>
+              <span class="badge badge-danger badge-pill">{{
+                cart.length
+              }}</span>
             </router-link>
           </div>
-          <router-link v-else class="btn btn-primary my-2 my-sm-0" to="/login">Login</router-link>
+          <router-link v-else class="btn btn-primary my-2 my-sm-0" to="/login"
+            >Login</router-link
+          >
         </div>
       </nav>
     </div>
@@ -35,14 +35,14 @@ export default {
   name: "Base",
   computed: {
     ...mapGetters("account", ["user"]),
-    ...mapGetters("product", ["cart"])
-  }
+    ...mapGetters("product", ["cart"]),
+  },
 };
 </script>
 
 <style>
 nav {
-  background-color: teal;
+  background-color: hsl(0, 0%, 10%);
 }
 .navbar-brand {
   font-weight: bold;
@@ -60,16 +60,16 @@ nav {
 .btn {
   border-radius: 0%;
   font-weight: bold;
-  background: teal;
-  border: teal;
+  background: crimson;
+  border: crimson;
 }
 .btn:hover {
-  background: #00b4b4;
+  background: lightcoral;
 }
 input {
   border-radius: 0%;
 }
 .btn:focus {
-  background: teal;
+  background: lightcoral;
 }
 </style>
