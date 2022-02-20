@@ -4,7 +4,11 @@
       <div class="row d-flex justify-content-center">
         <div class="col-5 text-left login-form-container">
           <div class="d-flex justify-content-center">
-            <img src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png" width="150" alt="">
+            <img
+              src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png"
+              width="150"
+              alt=""
+            />
           </div>
           <div>
             <div class="form-group">
@@ -15,20 +19,35 @@
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
-              <small
-                id="emailHelp"
-                class="form-text text-muted"
-              >We'll never share your email with anyone else.</small>
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" />
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
             </div>
             <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Remember me</label
+              >
             </div>
-            <button @click="login()" type="submit" class="btn btn-primary btn-block">Login</button>
+            <button
+              @click="login()"
+              type="submit"
+              class="btn btn-primary btn-block"
+            >
+              Login
+            </button>
           </div>
         </div>
       </div>
@@ -58,13 +77,13 @@ export default {
 .btn {
   border-radius: 0%;
   font-weight: bold;
-  background: teal;
-  border: teal;
+  background: crimson;
+  border: crimson;
 }
 .btn:hover {
-  background: #00b4b4;
+  background: lightcoral;
 }
 .btn:focus {
-  background: teal;
+  background: crimson;
 }
 </style>

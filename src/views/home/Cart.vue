@@ -6,39 +6,42 @@
           v-for="item in cart"
           :key="item.id"
           href="#"
-          class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+          class="
+            list-group-item list-group-item-action
+            d-flex
+            justify-content-between
+            align-items-center
+          "
         >
           <img :src="item.imageUrl" alt height="60" width="60" />
-          <p class="h4">{{ item.name }}</p>
-          <div class="row">
-            <div class="mr-2">
-              <p>Unique Price</p>
-              <p>${{ item.price }}</p>
-            </div>
-            <div class="mr-2">
-              <p>Total Price</p>
-              <p>${{ item.price * item.quantity }}</p>
-            </div>
-            <div>
-              <p>Quantity</p>
-              <p>{{ item.quantity }}</p>
-            </div>
+          <span class="h4">{{ item.name }}</span>
+          <div>
+            <span class="font-price">Rp. {{ item.price }}.000,- x {{ item.quantity }}</span>
+          </div>
+          <div>
+            <span class="h4 font-price">Rp. {{ item.price * item.quantity }}.000,-</span>
           </div>
         </a>
         <div
-          class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+          class="
+            list-group-item list-group-item-action
+            d-flex
+            justify-content-between
+            align-items-center
+          "
         >
-          <p class="h4">Total</p>
+          <span class="h4">Total</span>
           <div>
-            <p>Total Price</p>
-            <p>${{ totalPrice }}</p>
+            <span class="h4 font-price">Rp. {{ totalPrice }},000.-</span>
           </div>
         </div>
         <button
           @click="checkout()"
           type="button"
           class="btn btn-primary btn-lg btn-block mt-4"
-        >Checkout</button>
+        >
+          Checkout
+        </button>
       </div>
     </div>
   </div>

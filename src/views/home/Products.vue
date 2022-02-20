@@ -1,5 +1,5 @@
 <template>
-  <div style="padding: 25px;">
+  <div class="p-5">
     <div class="container">
       <div class="row">
         <div class="col-md-4" v-for="product in products" :key="product.id">

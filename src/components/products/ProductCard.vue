@@ -5,10 +5,9 @@
       <div class="pb-3">
         <h5 class="card-title text-left">{{ product.name }}</h5>
         <h4
-          class="card-subtitle text-left"
-          style="font-family: IBM Plex Mono, monospace"
+          class="card-subtitle text-left font-price"
         >
-          ${{ product.price }}
+          Rp. {{ product.price }}.000,-
         </h4>
       </div>
       <!-- <router-link

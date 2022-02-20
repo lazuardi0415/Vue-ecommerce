@@ -1,21 +1,25 @@
 <template>
-  <div class="row">
+  <div class="row mt-3">
     <div class="col-3">
       <label class="sr-only" for="inlineFormInputName2">Quantity</label>
-      <input type="number" v-model="quantity" class="form-control mb-2 mr-sm-2" />
+      <input type="number" v-model="quantity" class="form-control mr-2" />
     </div>
     <button
       v-if="!isInCardProp"
-      @click.stop="addCart({product, quantity})"
+      @click.stop="addCart({ product, quantity })"
       type="button"
       class="btn btn-primary btn-lg btn-block col-9"
-    >ADD TO CART</button>
+    >
+      ADD TO CART
+    </button>
     <button
       v-else
       @click.stop="removeCart(product.id)"
       type="button"
       class="btn btn-primary btn-lg btn-block col-9"
-    >REMOVE FROM CART</button>
+    >
+      REMOVE FROM CART
+    </button>
   </div>
 </template>
 
